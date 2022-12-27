@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Interactive card</title>
+</head>
+<body>
+    <section id="card-details">
+        <div class="card-back">
+            <div class="detail"></div>
+            <div class="cvc">000</div>
+        </div>
+        <div class="card-front">
+            <div class="logo">
+                <div class="circle"></div>
+                <div class="circumference"></div> 
+            </div>
+            
+            <div class="card-number">0000 0000 0000 0000</div>
+
+            <div class="card-information">
+                <div class="card-name">Lucas Kaique</div>
+                <div class="card-validity">00/00</div>
+            </div>
+        </div>
+    </section>
+
+    <form id="input-area">
+        <label for="nome">CARDHOLDER NAME</label>
+        <input type="text" id="nome" name="nome" placeholder="ex. Lucas Kaique">
+
+        <label for="numero">CARD NUMBER</label>
+        <input type="text" id="numero" name="numero" maxlength="16" placeholder="ex. 1234 5678 9123 0000">
+
+        <div class="area-elements">
+            <div class="date">
+                <label for="mes">EXP. DATE (MM/YY)</label>
+                <div>
+                    <input type="tel"
+                    id="mes-validade-cartao-form"
+                    placeholder="MM"
+                    size="3"
+                    maxlength="2"
+                    min="1"
+                    max="12">
+
+                    <input type="tel"
+                    id="ano-validade-cartao-form"
+                    placeholder="YY"
+                    size="3"
+                    maxlength="2">
+                </div>
+            </div>
+            <div class="input-cvc"> 
+                <label for="cvc">CVC</label>
+                <input type="text" name="cvc" id="cvc" placeholder="ex. 123">
+            </div>
+        </div>
+        
+        <input type="submit" value="Confirm" class="btn">
+      </form> 
+</body>
+</html>
